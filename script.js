@@ -25,8 +25,8 @@ function createAsteroids() {
     const asteroid = document.createElement("div");
 
     asteroid.className = "asteroid";
-    asteroid.style.width = (Math.random() * .3) + "px";
-    asteroid.style.height = (Math.random() * .3) + "px";
+    asteroid.style.width = (Math.random() * 2) + "px";
+    asteroid.style.height = (Math.random() * 2) + "px";
     asteroid.style.top = (50 + yvalue) + "%";
     asteroid.style.left = (50 + xvalue) + "%";
     container.appendChild(asteroid);
@@ -47,8 +47,8 @@ function createKuipers() {
     const kuiper = document.createElement("div");
 
     kuiper.className = "asteroid";
-    kuiper.style.width = (Math.random() * .3) + "px";
-    kuiper.style.height = (Math.random() * .3) + "px";
+    kuiper.style.width = (Math.random() * 2) + "px";
+    kuiper.style.height = (Math.random() * 2) + "px";
     kuiper.style.top = (50 + yvalue) + "%";
     kuiper.style.left = (50 + xvalue) + "%";
     container.appendChild(kuiper);

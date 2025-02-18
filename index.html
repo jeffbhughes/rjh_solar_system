@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Solar System</title>
+<link rel=stylesheet href="style.css">
+<script>
+  function planetSelect(planet){
+    document.querySelectorAll("div.card").forEach(function(card){card.style="display:none;";});
+
+    document.querySelector("#" + planet + "-card").style="display:block;";
+  }
+</script>
+</head>
+<body>
+  <header style="grid-area: 1 / -3 / 2 / -1; background-color: #ebebeb;">
+    <h2>Solar System by Rivers Hughes </h2>
+  </header>
+  <div id="planet-container" class="container">
+    <div class="kuipers" onclick="planetSelect('kuipers');"></div>
+    <div class=""pluto" onclick="planetSelect('pluto');"></div>
+    <div class="neptune" onclick="planetSelect('neptune');"></div>
+    <div class="uranus" onclick="planetSelect('uranus');"></div>
+    <div class="saturn" onclick="planetSelect('saturn');"></div>
+    <div class="jupiter" onclick="planetSelect('jupiter');"></div>
+    <div class="asteroids" onclick="planetSelect('asteroids');"></div>
+    <div class="mars" onclick="planetSelect('mars');"></div>
+    <div class="earth"  onclick="planetSelect('earth');">
+      <div class="moon"  onclick="planetSelect('moon');"></div>
+    </div>
+    <div class="venus"  onclick="planetSelect('venus');"></div>
+    <div class="mercury"  onclick="planetSelect('mercury');"></div>
+    <div class="sun"  onclick="planetSelect('sun');">
+      <img src="./images/sun.png" alt="sun">
+    </div>
+  </div>
+  <div style="grid-area: 2 / 3 / -1 / -1;background-color: #ebebeb;">
+    <div id="sun-card" class="card" style="display:none;">
+      <img class="card-image"  src="./images/sun.png" alt="Avatar">
+      <div class="card-container">
+        <h4><b>Sun</b></h4>
+        <h5>Description</h5>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+        <h5>Facts</h5>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+      </div>
+    </div>    
+    <div id="mercury-card" class="card" style="display:none;">
+      <img class="card-image"  src="./images/mercury.png" alt="Avatar">
+      <div class="card-container">
+        <h4><b>Mercury</b></h4>
+        <h5>Description</h5>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+        <h5>Facts</h5>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+      </div>
+    </div>
+    <div id="venus-card" class="card" style="display:none;">
+      <img class="card-image" src="./images/venus.png" alt="Avatar">
+      <div class="card-container">
+        <h4><b>Venus</b></h4>
+        <h5>Description</h5>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+        <h5>Facts</h5>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+      </div>
+    </div>    
+    <div id="earth-card" class="card" >
+      <img class="card-image" src="./images/earth.png" alt="Avatar">
+      <div class="card-container">
+        <h4><b>Earth</b></h4>
+        <h5>Description</h5>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+        <h5>Facts</h5>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+      </div>
+    </div>
+    <div id="moon-card" class="card" style="display:none;">
+      <img class="card-image" src="./images/moon.png" alt="Avatar">
+      <div class="card-container">
+        <h4><b>Moon</b></h4>
+        <h5>Description</h5>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+        <h5>Facts</h5>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+      </div>
+    </div>
+    <div id="asteroids-card" class="card" style="display:none;">
+      <img class="card-image-wide" src="./images/asteroid.png" alt="Avatar">
+      <div class="card-container">
+        <h4><b>Asteroid Belt</b></h4>
+        <h5>Description</h5>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+        <h5>Facts</h5>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+      </div>
+  </div>      
+    <div id="mars-card" class="card" style="display:none;">
+        <img class="card-image" src="./images/mars.png" alt="Avatar">
+        <div class="card-container">
+          <h4><b>Mars</b></h4>
+          <h5>Description</h5>
+          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+          <h5>Facts</h5>
+          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+        </div>
+    </div>
+    <div id="jupiter-card" class="card" style="display:none;">
+      <img class="card-image" src="./images/jupiter.png" alt="Avatar">
+      <div class="card-container">
+        <h4><b>Jupiter</b></h4>
+        <h5>Description</h5>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+        <h5>Facts</h5>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+      </div>
+  </div>
+    <div id="saturn-card" class="card" style="display:none;">
+        <img class="card-image-wide" src="./images/saturn2.png" alt="Avatar">
+        <div class="card-container">
+          <h4><b>Saturn</b></h4>
+          <h5>Description</h5>
+          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+          <h5>Facts</h5>
+          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+        </div>
+    </div>      
+    <div id="uranus-card" class="card" style="display:none;">
+      <img class="card-image" src="./images/uranus.png" alt="Avatar">
+      <div class="card-container">
+        <h4><b>Uranus</b></h4>
+        <h5>Description</h5>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+        <h5>Facts</h5>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+      </div>
+  </div>     
+
+  <div id="neptune-card" class="card" style="display:none;">
+    <img class="card-image" src="./images/neptune.png" alt="Avatar">
+    <div class="card-container">
+      <h4><b>Neptune</b></h4>
+      <h5>Description</h5>
+      <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+      <h5>Facts</h5>
+      <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+    </div>
+</div>     
+
+<div id="kuipers-card" class="card" style="display:none;">
+  <img class="card-image" src="./images/asteroid.png" alt="Avatar">
+  <div class="card-container">
+    <h4><b>Kuiper Belt</b></h4>
+    <h5>Description</h5>
+    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+    <h5>Facts</h5>
+    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue in eu senectus et id tortor mauris ex egestas. Sed nam duis fermentum maximus sed ultricies pharetra mauris. Auctor sociosqu tincidunt fusce morbi mauris dis auctor. Eget ultrices tellus rutrum nascetur dignissim rhoncus. Sagittis per aenean libero sem; curabitur dolor suscipit molestie montes. Efficitur netus taciti justo molestie convallis natoque magnis quis.</p>
+  </div>
+</div>     
+</div>
+  <script src="script.js"></script>
+</body>
+
+</html>
